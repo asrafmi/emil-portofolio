@@ -1,0 +1,69 @@
+@import '../../index.scss';
+
+.getInTouch {
+  padding: 90px 90px;
+
+  .getInTouchContainer {
+    @extend .flex-col;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+
+    .descriptionText {
+      text-align: center;
+    }
+
+    .contactContainer {
+      @extend .flex-col;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .emailWrapper,
+      .phoneWrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .mailIcon,
+        .squareIcon,
+        .phoneIcon {
+          @extend .iconSize;
+          color: #4b5563;
+        }
+
+        .email,
+        .phone {
+          color: var(--Gray-900, #111827);
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .platformContainer {
+      @extend .flex-col;
+      justify-content: center;
+      align-items: center;
+
+      .platformIconWrapper {
+        @extend .flex-row;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .getInTouch {
+    padding: 90px 250px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .getInTouch {
+    padding: 90px 30px;
+  }
+}

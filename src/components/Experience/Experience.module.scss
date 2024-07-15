@@ -1,0 +1,122 @@
+@import '../../index.scss';
+
+.experience {
+  padding: 90px 90px;
+  background-color: var(--Gray-50, #f9fafb);
+
+  .experienceContainer {
+    margin-top: 50px;
+
+    .descriptionText {
+      text-align: center;
+    }
+
+    .listExperienceContainer {
+      @extend .flex-col;
+      gap: 20px;
+
+      .experienceCard {
+        @extend .flex-col;
+        padding: 32px;
+        border-radius: 12px;
+        background: $white;
+        gap: 30px;
+
+        /* Drop Shadow/md */
+        box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.07),
+          0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+
+        .imgContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .experienceCardWrapper {
+          @extend .flex-col;
+          width: 100%;
+        }
+
+        .experienceLogo {
+          width: 100px;
+          height: 100px;
+          object-fit: contain;
+        }
+
+        .timeRangeWrapper {
+          @extend .flex-row;
+          justify-content: flex-end;
+          width: 20%;
+
+          .timeRange {
+            color: var(--Gray-700, #374151);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: end;
+          }
+        }
+
+        .descriptionCardWrapper {
+          width: 100%;
+        }
+
+        .position {
+          color: $donker-blue;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 28px;
+        }
+
+        li {
+          text-decoration: none;
+          color: $dark-grey;
+          text-align: justify;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .experienceCard {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+
+          .experienceCardWrapper {
+            display: flex;
+            flex-direction: row-reverse;
+          }
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .timeRangeWrapper {
+          justify-content: center !important;
+          width: 100% !important;
+
+          .timeRange {
+            color: var(--Gray-700, #374151);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .experience {
+    padding: 90px 250px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .experience {
+    padding: 90px 30px;
+  }
+}
