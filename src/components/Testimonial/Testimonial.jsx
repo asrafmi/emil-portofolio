@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styles from './Testimonial.module.scss';
 import Chip from '../Chip/Chip';
 import { Testimonials } from './Testimonial';
@@ -12,7 +13,19 @@ const Testimonial = () => {
         </p>
         <div className={styles.listTestimonialContainer}>
           {Testimonials.list.map((testimonial, index) => (
-            <div key={index} className={styles.testimonialCard}>
+            <motion.div
+              initial={{
+                y: 200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              key={index}
+              className={styles.testimonialCard}
+            >
               <img
                 src={testimonial.img}
                 alt="author-img"
@@ -27,7 +40,7 @@ const Testimonial = () => {
                 <p className={styles.authorName}>{testimonial.authorName}</p>
                 <p className={styles.authorWork}>{testimonial.authorWork}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

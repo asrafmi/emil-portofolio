@@ -8,6 +8,7 @@ import {
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 import styles from './Header.module.scss';
+import toast from 'react-hot-toast';
 
 const Header = () => {
   const [isLight, setIsLight] = useState(true);
@@ -15,6 +16,13 @@ const Header = () => {
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
+
+  const handleDownload = () =>
+    toast('Coming Soon!', {
+      icon: '⏳',
+      duration: 3000,
+      position: 'top-right',
+    });
   return (
     <>
       <header className={styles.header}>
@@ -31,6 +39,12 @@ const Header = () => {
                 <a href="#skill">Skills</a>
               </li>
               <li>
+                <a href="#experience">Experience</a>
+              </li>
+              <li>
+                <a href="#volunteer">Volunteer</a>
+              </li>
+              <li>
                 <a href="#testimonial">Testimonials</a>
               </li>
               <li>
@@ -42,18 +56,7 @@ const Header = () => {
             <hr />
           </div>
           <div className={styles.downloadContainer}>
-            {isLight ? (
-              <SunIcon
-                onClick={() => setIsLight(!isLight)}
-                className={styles.sunIcon}
-              />
-            ) : (
-              <MoonIcon
-                onClick={() => setIsLight(!isLight)}
-                className={styles.moonIcon}
-              />
-            )}
-            <button className={styles.downloadBtn}>
+            <button className={styles.downloadBtn} onClick={handleDownload}>
               <p>Download CV</p>
             </button>
           </div>
@@ -83,6 +86,12 @@ const Header = () => {
                 <a href="#skill">Skill</a>
               </li>
               <li>
+                <a href="#experience">Experience</a>
+              </li>
+              <li>
+                <a href="#volunteer">Volunteer</a>
+              </li>
+              <li>
                 <a href="#testimonial">Testimonials</a>
               </li>
               <li>
@@ -91,21 +100,7 @@ const Header = () => {
             </ul>
           </div>
           <hr />
-          <div className={styles.swithThemeContainer}>
-            <p>Switch Theme</p>
-            {isLight ? (
-              <SunIcon
-                onClick={() => setIsLight(!isLight)}
-                className={styles.sunIcon}
-              />
-            ) : (
-              <MoonIcon
-                onClick={() => setIsLight(!isLight)}
-                className={styles.moonIcon}
-              />
-            )}
-          </div>
-          <button className={styles.downloadBtn}>
+          <button className={styles.downloadBtn} onClick={handleDownload}>
             <p>Download CV</p>
           </button>
         </div>

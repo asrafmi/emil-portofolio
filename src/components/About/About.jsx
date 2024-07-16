@@ -117,7 +117,7 @@ const About = () => {
               <div>
                 <ul>
                   <li>UI/UX Designer</li>
-                  <li>English enthusiast</li>
+                  <li>English Enthusiast</li>
                 </ul>
               </div>
             </div>

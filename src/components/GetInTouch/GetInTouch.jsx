@@ -1,15 +1,21 @@
 import styles from './GetInTouch.module.scss';
 import Chip from '../Chip/Chip';
-import InstagramIcon from '../../assets/getInTouch/instagram.svg'
+import InstagramIcon from '../../assets/getInTouch/instagram.svg';
 import {
   EnvelopeIcon,
   PhoneIcon,
   Square2StackIcon,
 } from '@heroicons/react/24/outline';
+import toast from 'react-hot-toast';
 
 const GetInTouch = () => {
   const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text);
+    toast('Copied to clipboard!', {
+      icon: '📋',
+      duration: 3000,
+      position: 'top-right',
+    });
   };
   return (
     <section className={styles.getInTouch}>
@@ -33,7 +39,7 @@ const GetInTouch = () => {
             <img src={InstagramIcon} className={styles.phoneIcon} />
             <p className={styles.phone}>@emilyykhn</p>
             <Square2StackIcon
-              onClick={() => copyToClipboard('+@emilyykhn')}
+              onClick={() => copyToClipboard('@emilyykhn')}
               className={styles.squareIcon}
             />
           </div>

@@ -82,7 +82,7 @@ export const skills = {
     {
       id: 13,
       icon: Office365,
-      name: 'Figma',
+      name: 'Office 365',
     },
     {
       id: 14,

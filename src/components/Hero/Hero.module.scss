@@ -171,15 +171,11 @@
     .imgContainer {
       display: block;
 
-      .avatarWrapper {
-        padding: 10px 20px;
-      }
-
       .avatar {
         width: 100%;
-        margin: -60px 0 0 0;
         border: solid;
         height: auto;
+        margin: 0 !important;
       }
     }
   }
