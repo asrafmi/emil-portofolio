@@ -21,62 +21,6 @@
     border-radius: 50%;
   }
 
-  .absoluteBorder1 {
-    position: absolute;
-    border: 1px solid #333333;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    margin-top: 52px;
-    animation: ping 1s infinite;
-  }
-
-  .absoluteBorder2 {
-    position: absolute;
-    border: 1px solid #333333;
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-    margin-top: 52px;
-  }
-
-  .absoluteBorder3 {
-    position: absolute;
-    border: 1px solid #333333;
-    border-radius: 50%;
-    height: 500px;
-    width: 500px;
-    margin-top: 52px;
-  }
-
-  .absoluteBorder4 {
-    position: absolute;
-    border: 1px solid #f7ab0a;
-    border-radius: 50%;
-    height: 800px;
-    width: 800px;
-    margin-top: 52px;
-    opacity: 0.2;
-    animation: pulse 1s infinite;
-  }
-
-  @keyframes ping {
-    75%,
-    100% {
-      transform: scale(2);
-      opacity: 0;
-    }
-  }
-
-  .absoluteBorder5 {
-    position: absolute;
-    border: 1px solid #333333;
-    border-radius: 50%;
-    height: 800px;
-    width: 800px;
-    margin-top: 52px;
-  }
-
   .avatar {
     height: 280px;
     margin: 10px;
