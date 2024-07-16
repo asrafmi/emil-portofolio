@@ -5,7 +5,7 @@ import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Skill from './components/Skill/Skill.jsx';
 import Experience from './components/Experience/Experience.jsx';
-import Work from './components/Work/Work.jsx';
+import Volunteer from './components/Volunteer/Volunteer.jsx';
 import Testimonial from './components/Testimonial/Testimonial.jsx';
 import GetInTouch from './components/GetInTouch/GetInTouch.jsx';
 import Footer from './components/Footer/Footer.jsx';
@@ -34,7 +34,7 @@ function App() {
 
       {/* Section work */}
       <section id="work">
-        <Work />
+        <Volunteer />
       </section>
 
       {/* Section testimonial */}

@@ -19,22 +19,16 @@
       gap: 24px;
       border-radius: 12px;
       background: var(--Gray-Default, #fff);
+      width: 100%;
 
       box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.07),
         0px 2px 2px 0px rgba(0, 0, 0, 0.06);
 
-      .imgContainer {
+      .avatar {
+        height: 100px;
+        width: 100px;
         border-radius: 50%;
-        background: #9ca3af;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-
-        .avatar {
-          height: 40px;
-          width: 40px;
-        }
+        object-fit: cover;
       }
 
       .authorContainer {

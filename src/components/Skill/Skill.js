@@ -1,43 +1,103 @@
-import JavascriptIcon from '../../assets/skills/icon-javascript.svg';
-import TypescriptIcon from '../../assets/skills/icon-typescript.svg';
-import NestJSIcon from '../../assets/skills/icon-nest.svg';
-import ReactJSIcon from '../../assets/skills/icon-react.svg';
-import NextJSIcon from '../../assets/skills/icon-nextjs.svg';
-import NodeJSIcon from '../../assets/skills/icon-nodejs.svg';
-import ExpressJSIcon from '../../assets/skills/icon-express.svg';
-import SocketIcon from '../../assets/skills/icon-socket.svg';
-import PostgreIcon from '../../assets/skills/icon-postgresql.svg';
-import MongoIcon from '../../assets/skills/icon-mongodb.svg';
-import SassIcon from '../../assets/skills/icon-sass.svg';
-import TailwindIcon from '../../assets/skills/icon-tailwindcss.svg';
-import FigmaIcon from '../../assets/skills/icon-figma.svg';
-import CypressIcon from '../../assets/skills/icon-cypress.svg';
-import StoryBookIcon from '../../assets/skills/icon-storybook.svg';
-import GitIcon from '../../assets/skills/icon-git.svg';
+import AdministrationSystem from '../../assets/skills/administration-system.svg';
+import BusinessIntelligence from '../../assets/skills/business-intelligence.svg';
+import CSS from '../../assets/skills/css.svg';
+import Dart from '../../assets/skills/dart.svg';
+import DataAnalytics from '../../assets/skills/data-analytics.svg';
+import DataScience from '../../assets/skills/data-science.svg';
+import Figma from '../../assets/skills/figma.svg';
+import Flutter from '../../assets/skills/flutter.svg';
+import Git from '../../assets/skills/git.svg';
+import Html from '../../assets/skills/html.svg';
+import MicrosoftPowerBI from '../../assets/skills/microsoft-power-bi.svg';
+import Mysql from '../../assets/skills/mysql.svg';
+import Office365 from '../../assets/skills/office-365.svg';
+import OpperationalSystem from '../../assets/skills/opperational-system.svg';
+import PhpMyAdmin from '../../assets/skills/phpmyadmin.svg';
+import Python from '../../assets/skills/python.svg';
 
 export const skills = {
   title: 'Skills',
   description: 'The skills, tools and technologies I am really good at:',
   list: [
     {
-      id: 11,
-      icon: SassIcon,
-      name: 'Sass/Scss',
+      id: 1,
+      icon: AdministrationSystem,
+      name: 'Administration System',
     },
     {
-      id: 12,
-      icon: TailwindIcon,
-      name: 'Tailwind CSS',
+      id: 2,
+      icon: BusinessIntelligence,
+      name: 'Business Intelligence',
     },
     {
-      id: 13,
-      icon: FigmaIcon,
+      id: 3,
+      icon: CSS,
+      name: 'CSS',
+    },
+    {
+      id: 4,
+      icon: Dart,
+      name: 'Dart',
+    },
+    {
+      id: 5,
+      icon: DataAnalytics,
+      name: 'Data Analytics',
+    },
+    {
+      id: 6,
+      icon: DataScience,
+      name: 'Data Science',
+    },
+    {
+      id: 7,
+      icon: Figma,
       name: 'Figma',
     },
     {
-      id: 16,
-      icon: GitIcon,
+      id: 8,
+      icon: Flutter,
+      name: 'Flutter',
+    },
+    {
+      id: 9,
+      icon: Git,
       name: 'Git',
+    },
+    {
+      id: 10,
+      icon: Html,
+      name: 'Html',
+    },
+    {
+      id: 11,
+      icon: MicrosoftPowerBI,
+      name: 'Microsoft Power BI',
+    },
+    {
+      id: 12,
+      icon: Mysql,
+      name: 'MySQL',
+    },
+    {
+      id: 13,
+      icon: Office365,
+      name: 'Figma',
+    },
+    {
+      id: 14,
+      icon: OpperationalSystem,
+      name: 'Operational System',
+    },
+    {
+      id: 15,
+      icon: PhpMyAdmin,
+      name: 'PhpMyAdmin',
+    },
+    {
+      id: 16,
+      icon: Python,
+      name: 'Python',
     },
   ],
 };

@@ -24,6 +24,7 @@ const Skill = () => {
                 }}
                 src={skill.icon}
                 alt={skill.name}
+                className={styles.skillIcon}
               />
               <motion.p
                 initial={{

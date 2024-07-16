@@ -29,6 +29,13 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
+    text-align: center;
+
+    .skillIcon {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
   }
 }
 

@@ -2,6 +2,7 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import styles from './About.module.scss';
 import Chip from '../Chip/Chip';
+import { Typewriter } from 'react-simple-typewriter';
 
 const About = () => {
   const defaultOptions = {
@@ -59,7 +60,15 @@ const About = () => {
         >
           <div className={styles.descriptionWrapper}>
             <h1 className={styles.titleDescription}>
-              Curious about me? Here you have it:
+              <Typewriter
+                words={['Curious about me?', 'Here you have it:']}
+                loop={true}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={2000}
+              />
             </h1>
             <p className={styles.textDescription}>
               I have actively contributed to the Bandung Student Association at

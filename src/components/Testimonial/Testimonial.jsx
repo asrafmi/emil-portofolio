@@ -13,13 +13,13 @@ const Testimonial = () => {
         <div className={styles.listTestimonialContainer}>
           {Testimonials.list.map((testimonial, index) => (
             <div key={index} className={styles.testimonialCard}>
-              <div className={styles.imgContainer}>
-                <img
-                  src={testimonial.img}
-                  alt="author-img"
-                  className={styles.avatar}
-                />
-              </div>
+              <img
+                src={testimonial.img}
+                alt="author-img"
+                className={styles.avatar}
+              />
+              {/* <div className={styles.imgContainer}>
+              </div> */}
               <p className={styles.descriptionTextTestimonial}>
                 {testimonial.description}
               </p>

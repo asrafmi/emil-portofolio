@@ -1,18 +1,28 @@
-import styles from './Work.module.scss';
+import { motion } from 'framer-motion';
+import styles from './Volunteer.module.scss';
 import WorkPicture from '../../assets/work/picture.png';
 import Chip from '../Chip/Chip';
-import { Work as WorkItems } from './Work';
+import { Volunteer as VolunteerItems } from './Volunteer';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
-const Work = () => {
+const Volunteer = () => {
   return (
     <section className={styles.work}>
-      <Chip title={WorkItems.title} />
+      <Chip title={VolunteerItems.title} />
       <div className={styles.workContainer}>
-        <p className={styles.descriptionText}>{WorkItems.description}</p>
+        <p className={styles.descriptionText}>{VolunteerItems.description}</p>
         <div className={styles.listWorkContainer}>
-          {WorkItems.list.map((workItem) => (
-            <div
+          {VolunteerItems.list.map((workItem) => (
+            <motion.div
+              initial={{
+                y: 200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
               key={workItem.id}
               className={styles.workCard}
               style={{ flexDirection: workItem.reverse ? 'row-reverse' : null }}
@@ -25,10 +35,15 @@ const Work = () => {
                 />
               </div>
               <div className={styles.descriptionContainer}>
-                <p className={styles.workTitle}>{WorkItems.title}</p>
-                <p className={styles.workDescription}>
-                  {WorkItems.description}
-                </p>
+                <p className={styles.workTitle}>{workItem.title}</p>
+                <p className={styles.workDescription}>{workItem.description}</p>
+                <ul className={styles.listDescription}>
+                  {workItem.details.map((desc) => (
+                    <li key={desc.id} className={styles.description}>
+                      {desc.text}
+                    </li>
+                  ))}
+                </ul>
                 <div className={styles.techStack}>
                   {workItem.techStack.map((tech) => (
                     <Chip title={tech} key={tech} />
@@ -36,7 +51,7 @@ const Work = () => {
                 </div>
                 <ArrowTopRightOnSquareIcon className={styles.redirectIcon} />
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -44,4 +59,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Volunteer;

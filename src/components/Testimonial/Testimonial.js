@@ -1,29 +1,31 @@
 import UserIcon from '../../assets/testimonials/icon-user.svg';
+import Yajid from '../../assets/testimonials/yajidd.jpeg';
+import Nat from '../../assets/testimonials/nat.png';
 
 export const Testimonials = {
   title: 'Testimonials',
   description: 'Nice things people have said about me:',
   list: [
     {
-      img: UserIcon,
+      img: Yajid,
       description:
-        '“Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.”',
-      authorName: 'John Doe',
-      authorWork: 'Founder - xyz.com',
+        '“Emily tuh mnrut gua sebagai temen kelas, dia orang yang ulet, pinter, rajin, trus kalo gua sbg temen kelas dia tuh kalo sama temen2 circle nya dia friendly dan ramah”',
+      authorName: 'Yazid',
+      authorWork: 'Classmate',
     },
     {
-      img: UserIcon,
+      img: Nat,
       description:
-        '“Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.”',
-      authorName: 'Bill Gates',
-      authorWork: 'Microsoft - microsoft.com',
+        '“Selalu nanyain kabar temennya trus make sure temennya baik2 aja. klo pun lgi ga baik2 aja dia ada buat dengerin dan ngasih saran”',
+      authorName: 'Natasya',
+      authorWork: 'Classmate',
     },
     {
-      img: UserIcon,
+      img: Nat,
       description:
-        '“Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.”',
-      authorName: 'Elon Musk',
-      authorWork: 'Tesla - tesla.com',
+        '“Aktif dan kooperatif ketika masih menjadi maba peserta OASIS”',
+      authorName: 'Asraf',
+      authorWork: 'Senior',
     },
   ],
 };

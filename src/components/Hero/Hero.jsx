@@ -2,17 +2,14 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { MapPinIcon } from '@heroicons/react/24/outline';
 import styles from './Hero.module.scss';
-import { useTypewriter } from 'react-simple-typewriter';
+import { Typewriter, useTypewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
-  const [text] = useTypewriter({
-    words: [
-      "Hi, I'm Emily 👋",
-      'Girl who likes sushi 🍣',
-      'and anything about Data 📊',
-    ],
-    loop: 3,
-  });
+  const words = [
+    "Hi, I'm Emily 👋",
+    'Girl who likes sushi 🍣',
+    'and anything about Data 📊',
+  ];
   const defaultOptions = {
     reverse: false, // reverse the tilt direction
     max: 35, // max tilt rotation (degrees)
@@ -62,7 +59,18 @@ const Hero = () => {
           className={styles.descriptionContainer}
         >
           <div className={styles.descriptionWrapper}>
-            <h1 className={styles.titleDescription}>{text}</h1>
+            <h1 className={styles.titleDescription}>
+              {' '}
+              <Typewriter
+                words={words}
+                loop={true}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </h1>
             <p className={styles.textDescription}>
               I'm an enthusiastic undergraduate at Telkom University, working
               towards a diploma in Information Systems. I'm deeply passionate
