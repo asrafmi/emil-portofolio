@@ -9,6 +9,7 @@ const Hero = () => {
     "Hi, I'm Emily 👋",
     'Girl who likes sushi 🍣',
     'and anything about Data 📊',
+    "Hi, I'm Emily 👋",
   ];
   const defaultOptions = {
     reverse: false, // reverse the tilt direction
@@ -63,7 +64,7 @@ const Hero = () => {
               {' '}
               <Typewriter
                 words={words}
-                loop={true}
+                loop={1}
                 cursor
                 cursorStyle="|"
                 typeSpeed={70}

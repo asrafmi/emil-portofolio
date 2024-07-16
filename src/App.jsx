@@ -32,8 +32,8 @@ function App() {
         <Experience />
       </section>
 
-      {/* Section work */}
-      <section id="work">
+      {/* Section volunteer */}
+      <section id="volunteer">
         <Volunteer />
       </section>
 

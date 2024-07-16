@@ -10,7 +10,7 @@ const Footer = () => {
           className={styles.copyRightIcon}
         />
         <p className={styles.text}>
-          2023 | Designed and coded with ❤️️ by Asraf
+          2023 | Volunteered by Asraf
         </p>
       </div>
     </section>

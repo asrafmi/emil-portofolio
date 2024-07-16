@@ -1,5 +1,6 @@
 import styles from './GetInTouch.module.scss';
 import Chip from '../Chip/Chip';
+import InstagramIcon from '../../assets/getInTouch/instagram.svg'
 import {
   EnvelopeIcon,
   PhoneIcon,
@@ -15,25 +16,24 @@ const GetInTouch = () => {
       <div className={styles.getInTouchContainer}>
         <Chip title="Get in touch" />
         <p className={styles.descriptionText}>
-          What’s next? Feel free to reach out to me if you're looking for a
-          developer, have a query, or simply want to connect.
+          What’s next? Feel free to reach out to me if you want to connect.
         </p>
         <div className={styles.contactContainer}>
           <div className={styles.emailWrapper}>
-            <a href="mailto:asraf.muhammad07@gmail.com">
+            <a href="mailto:emily.khadijah28@gmail.com">
               <EnvelopeIcon className={styles.mailIcon} />
             </a>
-            <p className={styles.email}>asraf.muhammad07@gmail.com</p>
+            <p className={styles.email}>emily.khadijah28@gmail.com</p>
             <Square2StackIcon
-              onClick={() => copyToClipboard('asraf.muhammad07@gmail.com')}
+              onClick={() => copyToClipboard('emily.khadijah28@gmail.com')}
               className={styles.squareIcon}
             />
           </div>
           <div className={styles.phoneWrapper}>
-            <PhoneIcon className={styles.phoneIcon} />
-            <p className={styles.phone}>+6282245101283</p>
+            <img src={InstagramIcon} className={styles.phoneIcon} />
+            <p className={styles.phone}>@emilyykhn</p>
             <Square2StackIcon
-              onClick={() => copyToClipboard('+6282245101283')}
+              onClick={() => copyToClipboard('+@emilyykhn')}
               className={styles.squareIcon}
             />
           </div>

@@ -4,7 +4,7 @@ import MetroData from '../../assets/experiences/logo-metrodata.png';
 
 export const experience = {
   title: 'Experience',
-  description: 'My experience in the field of software development:',
+  description: 'My experiences:',
   list: [
     {
       id: 1,

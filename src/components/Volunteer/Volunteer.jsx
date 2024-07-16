@@ -49,7 +49,6 @@ const Volunteer = () => {
                     <Chip title={tech} key={tech} />
                   ))}
                 </div>
-                <ArrowTopRightOnSquareIcon className={styles.redirectIcon} />
               </div>
             </motion.div>
           ))}

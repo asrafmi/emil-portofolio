@@ -1,6 +1,7 @@
 import UserIcon from '../../assets/testimonials/icon-user.svg';
 import Yajid from '../../assets/testimonials/yajidd.jpeg';
 import Nat from '../../assets/testimonials/nat.png';
+import Asrap from '../../assets/testimonials/asrap.jpeg';
 
 export const Testimonials = {
   title: 'Testimonials',
@@ -21,9 +22,9 @@ export const Testimonials = {
       authorWork: 'Classmate',
     },
     {
-      img: Nat,
+      img: Asrap,
       description:
-        '“Aktif dan kooperatif ketika masih menjadi maba peserta OASIS”',
+        '“Aktif dan kooperatif ketika masih menjadi maba peserta OASIS dan ketika menjadi anggota HMDSI”',
       authorName: 'Asraf',
       authorWork: 'Senior',
     },
