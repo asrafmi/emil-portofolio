@@ -1,12 +1,13 @@
 import styles from './GetInTouch.module.scss';
 import Chip from '../Chip/Chip';
-import InstagramIcon from '../../assets/getInTouch/instagram.svg';
 import {
   EnvelopeIcon,
   PhoneIcon,
   Square2StackIcon,
 } from '@heroicons/react/24/outline';
 import toast from 'react-hot-toast';
+import InstagramIcon from '../../assets/instagram.svg';
+import LinkedInIcon from '../../assets/linkedin.svg';
 
 const GetInTouch = () => {
   const copyToClipboard = (text) => {
@@ -16,6 +17,15 @@ const GetInTouch = () => {
       duration: 3000,
       position: 'top-right',
     });
+  };
+
+  const handleClickSocialIcon = (e) => {
+    const social = e.target.alt;
+    if (social === 'instagram') {
+      window.open('https://www.instagram.com/emilyykhn/', '_blank');
+    } else if (social === 'linkedin') {
+      window.open('https://www.linkedin.com/in/emilykhdjhn/', '_blank');
+    }
   };
   return (
     <section className={styles.getInTouch}>
@@ -47,9 +57,18 @@ const GetInTouch = () => {
         <div className={styles.platformContainer}>
           <p>You may also find me on these platforms!</p>
           <div className={styles.platformIconWrapper}>
-            <img src="/icons/github.png" alt="github" />
-            <img src="/icons/twitter.png" alt="twitter" />
-            <img src="/icons/figma.png" alt="figma" />
+            <img
+              className={styles.socialIcon}
+              src={InstagramIcon}
+              alt="instagram"
+              onClick={handleClickSocialIcon}
+            />
+            <img
+              className={styles.socialIcon}
+              src={LinkedInIcon}
+              alt="linkedin"
+              onClick={handleClickSocialIcon}
+            />
           </div>
         </div>
       </div>

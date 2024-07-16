@@ -51,6 +51,11 @@
       .platformIconWrapper {
         @extend .flex-row;
         gap: 10px;
+
+        .socialIcon {
+          @extend .iconSize;
+          color: $dark-grey;
+        }
       }
     }
   }

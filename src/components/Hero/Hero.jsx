@@ -1,8 +1,10 @@
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { MapPinIcon } from '@heroicons/react/24/outline';
-import styles from './Hero.module.scss';
 import { Typewriter, useTypewriter } from 'react-simple-typewriter';
+import styles from './Hero.module.scss';
+import InstagramIcon from '../../assets/instagram.svg';
+import LinkedInIcon from '../../assets/linkedin.svg';
 
 const Hero = () => {
   const words = [
@@ -21,6 +23,15 @@ const Hero = () => {
     axis: null, // What axis should be disabled. Can be X or Y.
     reset: true, // If the tilt effect has to be reset on exit.
     easing: 'cubic-bezier(.03,.98,.52,.99)', // Easing on enter/exit.
+  };
+
+  const handleClickSocialIcon = (e) => {
+    const social = e.target.alt;
+    if (social === 'instagram') {
+      window.open('https://www.instagram.com/emilyykhn/', '_blank');
+    } else if (social === 'linkedin') {
+      window.open('https://www.linkedin.com/in/emilykhdjhn/', '_blank');
+    }
   };
   return (
     <section className={styles.hero}>
@@ -94,9 +105,18 @@ const Hero = () => {
             </div>
           </div>
           <div className={styles.socialWrapper}>
-            <img src="/icons/github.png" alt="github" />
-            <img src="/icons/twitter.png" alt="twitter" />
-            <img src="/icons/figma.png" alt="figma" />
+            <img
+              className={styles.socialIcon}
+              src={InstagramIcon}
+              alt="instagram"
+              onClick={handleClickSocialIcon}
+            />
+            <img
+              className={styles.socialIcon}
+              src={LinkedInIcon}
+              alt="linkedin"
+              onClick={handleClickSocialIcon}
+            />
           </div>
         </motion.div>
       </div>
